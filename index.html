@@ -6,17 +6,24 @@
     <title>Tìm Kiếm Từ Vựng</title>
     <!-- Liên kết với Google Font Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Liên kết với Font Awesome (dùng biểu tượng tìm kiếm) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Liên kết với file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Container tìm kiếm -->
-    <div class="search-container">
-        <h1>Tìm Kiếm Từ Vựng</h1>
-        <!-- Input tìm kiếm từ vựng -->
-        <input type="text" id="searchInput" placeholder="Tìm từ vựng..." oninput="searchVocabulary()">
-        <!-- Kết quả tìm kiếm sẽ hiển thị tại đây -->
-        <div id="searchResults" class="search-results"></div>
+    <div class="wrapper">
+        <!-- Container tìm kiếm -->
+        <div class="search-container">
+            <h1>Tìm Kiếm Từ Vựng</h1>
+            <!-- Input tìm kiếm với biểu tượng kính lúp -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Nhập từ vựng..." oninput="searchVocabulary()">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- Kết quả tìm kiếm sẽ hiển thị tại đây -->
+            <div id="searchResults" class="search-results"></div>
+        </div>
     </div>
 
     <!-- Liên kết với Firebase -->
